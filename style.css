@@ -1,0 +1,88 @@
+:root {
+    --primary1: hsl(30, 38%, 92%);
+    --primary2: hsl(158, 36%, 37%);
+
+    --net1: white;
+    --net2: hsl(228, 12%, 48%);
+    --net3: hsl(212, 21%, 14%);
+
+    --bg-color: var(--primary1);
+    --btn-color: var(--primary2);
+    --text-color: var(--net2);
+    --heading-color: var(--net3);
+
+    --font--body: 'Montserrat', sans-serif;
+    --font-heading: 'Fraunces', serif;
+    --font-size: 0.875rem;
+
+    --w-500: 500;
+    --w-700: 700;
+}   
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font--body);
+    font-size: var(--font-size);
+}
+
+h1 {
+    color: var(--net3);
+}
+
+.h-style {
+    font-family: var(--font-heading);
+    font-weight: var(--w-700);
+}
+
+.price {
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+    height: 100%
+}
+
+.containerall {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--net1);
+    max-width: 37rem;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.flex {
+    display: flex;
+}
+
+.bold {
+    font-weight: var(--w-700);
+}
+
+.btn {
+    font-family: var(--font--body);
+    color: var(--net1);
+}
+
+.right {
+    padding: 2rem;
+}
